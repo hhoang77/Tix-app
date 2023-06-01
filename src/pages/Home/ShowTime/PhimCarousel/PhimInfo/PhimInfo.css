@@ -1,0 +1,144 @@
+.film_poster {
+  /* background-image: url("https://movie0706.cybersoft.edu.vn/hinhanh/ke-doc-hanh_gp09.jpg"); */
+  /* padding-top: 147.9%; */
+  /* border-radius: 4px; */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+.film_poster:hover {
+  background-color: linear-gradient(0deg, #000, transparent);
+}
+.film_poster:hover .play {
+  display: inline;
+}
+.film_overlay {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(0deg, #000, transparent);
+  opacity: 0;
+}
+.film_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 50px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all s 0.2;
+  opacity: 0;
+}
+.play {
+  height: 48px;
+  width: 48px;
+  top: 50%;
+  left: 50%;
+  border: none;
+  z-index: 100;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  display: none;
+}
+.play:hover {
+  opacity: 0.7;
+}
+.evaluate {
+  top: 12px;
+  color: #fff;
+  right: 12px;
+  width: 80px;
+  border: 1px solid #1f2e46;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  font-family: "SF Medium";
+  line-height: 1.1;
+  border-radius: 4px;
+  background-color: rgba(12, 27, 54, 0.8);
+  font-weight: bold;
+}
+.star {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starList {
+  color: #dc3545;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  font-size: 1.5rem;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 10px !important;
+  pointer-events: none;
+}
+.film_content {
+  position: relative;
+  padding-top: 10px;
+}
+.film_content:hover .price_film {
+  opacity: 1;
+}
+.film_name {
+  min-height: 100px;
+}
+.name {
+  font-weight: 500;
+  height: 42px;
+  max-height: 42px;
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.c18 {
+  font-size: 14px;
+  background-color: #fb4226;
+  border-radius: 4px;
+  padding: 1px 5px 0;
+  color: #fff;
+  min-width: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 19px;
+}
+.price_film {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0;
+  background: rgb(251, 66, 38);
+  cursor: pointer;
+}
+.nen {
+  height: 120px;
+  max-width: 940px;
+  margin: auto;
+  width: 100%;
+  background: url("https://movie-booking-project.vercel.app/img/back-news.png")
+    0% 0% / 100% no-repeat;
+}

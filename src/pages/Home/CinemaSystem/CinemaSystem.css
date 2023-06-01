@@ -1,0 +1,6 @@
+.myImg {
+  opacity: 0.5;
+}
+.myImg.active {
+  opacity: 1;
+}
