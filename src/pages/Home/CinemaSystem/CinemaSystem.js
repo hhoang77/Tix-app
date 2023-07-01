@@ -21,7 +21,8 @@ function CinemaSystem() {
       .catch((err) => {
         console.log("Lỗi: ", err);
       });
-  });
+  }, []);
+  // console.log(CumRap);
 
   const renderHeThongRap = () => {
     return (
@@ -40,7 +41,7 @@ function CinemaSystem() {
             key={index}
           >
             <Tabs tabPosition={tabPosition}>
-              {heThongRap.lstCumRap?.map((cumRap, index) => {
+              {heThongRap.lstCumRap?.slice(0, 8).map((cumRap, index) => {
                 return (
                   <TabPane
                     tab={
@@ -51,9 +52,10 @@ function CinemaSystem() {
                         }}
                       >
                         <img
-                          src="https://s3img.vcdn.vn/123phim/2018/09/ddc-dong-da-15379624326697.jpg"
-                          width="50"
-                        />{" "}
+                          className="w-12 h-12"
+                          src={cumRap.hinhAnh}
+                          alt="ảnh lỗi"
+                        />
                         <br />
                         <div className="text-left ml-2">
                           {cumRap.tenCumRap}
@@ -91,8 +93,7 @@ function CinemaSystem() {
                                     .map((lichChieu, index) => {
                                       return (
                                         <NavLink
-                                          // to={`/phim/${lichChieu.maLichChieu}`}
-                                          to={`/datVe/${123}`}
+                                          to={`/datVe/${lichChieu.maLichChieu}`}
                                           key={index}
                                         >
                                           <button
@@ -129,7 +130,7 @@ function CinemaSystem() {
   };
 
   return (
-    <div className="ml-52 mr-52">
+    <div id="cumrap" className="ml-52 mr-52">
       <Tabs tabPosition={tabPosition}>{renderHeThongRap()}</Tabs>
     </div>
   );

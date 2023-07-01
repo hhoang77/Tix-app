@@ -6,9 +6,7 @@ import Review from "./Review/Review";
 
 function News(props) {
   const tabPosition = "top";
-  const onChange = (key) => {
-    console.log(key);
-  };
+  const onChange = (key) => {};
   const items = [
     {
       key: "1",

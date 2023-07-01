@@ -3,8 +3,9 @@ import React from "react";
 function LichChieu() {
   return (
     <div
+      id="lichchieuphim"
       style={{
-        minHeight: "713px",
+        minHeight: "513px",
         borderRadius: "10px",
         width: "822px",
         marginLeft: "25%",

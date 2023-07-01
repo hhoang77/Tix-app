@@ -33,13 +33,14 @@
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 90%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
+  margin-left: 16px;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -89,4 +90,12 @@ input {
   margin: 0;
   display: inline-flex;
   outline: 0;
+}
+.alert-rg {
+  margin-left: 50px;
+  width: 80%;
+  border-radius: 16px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }

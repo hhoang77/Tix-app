@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Film from "./pages/Film/Film";
 import Register from "./pages/Register/Register";
@@ -8,8 +8,8 @@ import Profile from "./pages/Profile/Profile";
 import Login from "./pages/Login/Login";
 import DatVe from "./pages/Datve/DatVe";
 import BackTop from "./components/BackToTop/BackTop";
-
 import { createBrowserHistory } from "history";
+
 function App() {
   return (
     <BrowserRouter>

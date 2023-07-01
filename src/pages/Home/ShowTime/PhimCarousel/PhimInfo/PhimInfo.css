@@ -89,6 +89,9 @@
 .film_content:hover .price_film {
   opacity: 1;
 }
+.film_content:hover .film_name {
+  opacity: 0;
+}
 .film_name {
   min-height: 100px;
 }

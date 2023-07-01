@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
 function BackTop(props) {
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
@@ -35,7 +34,7 @@ function BackTop(props) {
         bottom: "50px",
         right: "30px",
         cursor: "pointer",
-        transition: "opacity 0.2s linear 0s, visibility;",
+        transition: "opacity 0.2s linear 0s, visibility",
         opacity: "1",
         visibility: "visible",
         display: visible ? "inline" : "none",
@@ -53,7 +52,7 @@ function BackTop(props) {
           transitionTimingFunction: "linear",
         }}
         className="h-12 w-12"
-        src="	https://movie-booking-project.vercel.app/img/logoTixLoading.png"
+        src="https://movie-booking-project.vercel.app/img/logoTixLoading.png"
         alt="logo"
       />
     </div>
